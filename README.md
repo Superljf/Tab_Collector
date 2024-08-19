@@ -35,7 +35,7 @@ npm install
 ### 开发环境
 
 ```bash
-npm run dev
+npm start
 ```
 
 ### 构建项目
