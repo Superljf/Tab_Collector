@@ -1,6 +1,6 @@
 
 
-```markdown
+
 # TabCollector
 
 **TabCollector** 是一个 Chrome 扩展程序，旨在帮助用户收集和管理工作相关的链接，使你能够轻松地组织和访问常用的网页。
