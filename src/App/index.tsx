@@ -20,20 +20,9 @@ export default function App() {
     localStorage.setItem('linkListtablinks2024', JSON.stringify(updatedLinkList));
   };
 
-  // useEffect(() => {
-  //   // �� localStorage �ж�ȡ linkList
-  //   const storedLinkList = localStorage.getItem('linkListtablinks2024');
-
-  //   if (storedLinkList !== "[]" && !storedLinkList) {
-  //     setLinkList(JSON.parse(storedLinkList));
-  //   } else {
-  //     // ��� localStorage ��û�д洢 linkList���򱣴浱ǰ�� linkList �� localStorage
-  //     saveToLocalStorage(linkList);
-  //   }
-  // }, []); // ��������Ϊ������ֻ���������ʱִ��һ��
 
 
-  const handleClick = (url:any) => {
+  const handleClick = (url: any) => {
     window.open(url, '_blank');
   };
 
@@ -93,43 +82,11 @@ export default function App() {
           {item.urlList?.map((url, urlIndex) => (
             <div key={url.url} className="addressContainer">
               <div className="addressName" onClick={() => handleClick(url.url)} title={url.url}>{url.pathname}</div>
-              {/* <div className="deleteButton" onClick={() => deleteAddress(index, urlIndex)}>ɾ����ַ</div> */}
             </div>
           ))}
-          {/* <div className="formContainer">
-            <div style={{ flex: 1, display: 'flex', }}>
-              <input
-                className="inputField"
-                style={{ width: 90 }}
-                type="text"
-                placeholder="��ַ����"
-                value={newAddressName}
-                onChange={(e) => setNewAddressName(e.target.value)}
-              />
-              <input
-                className="inputField"
-                style={{ width: 90 }}
-                type="text"
-                placeholder="��ַURL"
-                value={newAddressURL}
-                onChange={(e) => setNewAddressURL(e.target.value)}
-              />
-            </div>
-            <button className="addButton" onClick={() => addNewAddress(index)}>���ӵ�ַ</button>
-          </div> */}
-          {/* <div className="deleteTabButton" onClick={() => deleteTab(index)}>ɾ��tab</div> */}
+
         </div>
       ))}
-      {/* <div className="addTabContainer">
-        <input
-          className="inputField"
-          type="text"
-          placeholder="��tab����"
-          value={newTab}
-          onChange={(e) => setNewTab(e.target.value)}
-        />
-        <button className="addButton" onClick={addNewTab}>������tab</button>
-      </div> */}
     </div>
   );
 }

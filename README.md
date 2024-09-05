@@ -1,60 +1,71 @@
 
+
 ```markdown
-# Tab_links
+# TabCollector
 
-**Tab_links** 是一个基于 React 开发的 Google Chrome 插件，用于链接聚合。通过 Tab_links，用户可以轻松地将常用网站链接集中到一个新标签页中，方便访问和管理。
+**TabCollector** 是一个 Chrome 扩展程序，旨在帮助用户收集和管理工作相关的链接，使你能够轻松地组织和访问常用的网页。
 
-## 功能
+## 功能特点
 
-- 快速访问常用网站链接
-- 用户可以自定义链接名称和地址
-- 支持标签分组管理
+- **链接收集和管理**：轻松保存、组织和访问工作相关的链接。
+- **用户友好的界面**：简洁直观的用户界面，方便管理你的链接。
+- **高效的工作流程**：直接从浏览器快速访问最重要的工作链接。
 
-## 项目结构
+## 界面预览
+- ![主页]('./src/img/image.png')
+- ![编辑]('./src/img/img2.png')
 
-- **React**: 前端框架，用于构建用户界面
-- **Vite**: 构建工具，提供快速开发体验
-- **TypeScript**: 提供类型检查，确保代码的可靠性
-- **Less**: CSS 预处理器，用于简化样式编写
+## 安装步骤
 
-## 使用方法
+1. 克隆此仓库到你的本地机器：
+   ```bash
+   git clone https://github.com/Superljf/TabCollector.git
+   ```
+2. 进入项目目录：
+   ```bash
+   cd TabCollector
+   ```
+3. 安装依赖：
+   ```bash
+   npm install
+   ```
+4. 启动开发服务器：
+   ```bash
+   npm run dev
+   ```
 
-### 克隆仓库
+## 生产环境构建
 
-```bash
-git clone https://github.com/Superljf/Tab_links.git
-cd Tab_links
-```
-
-### 安装依赖
-
-```bash
-npm install
-```
-
-### 开发环境
-
-```bash
-npm run dev
-```
-
-### 构建项目
+要为生产环境构建扩展程序，请运行以下命令：
 
 ```bash
 npm run build
 ```
 
-### 预览构建结果
+这将生成位于 `dist` 目录中的生产就绪文件。
 
-```bash
-npm run preview
-```
+## 在 Chrome 中加载扩展程序
 
-## 贡献
+1. 打开 Chrome 并进入 `chrome://extensions/`。
+2. 在右上角启用“开发者模式”。
+3. 点击“加载已解压的扩展程序”，然后选择项目目录中的 `dist` 文件夹。
 
-欢迎任何形式的贡献！如果你发现了问题或有改进建议，请提交 [Issues](https://github.com/yourusername/Tab_links/issues) 或发起 Pull Request。
+## 项目结构
+
+- `src/`：源代码目录，包含所有的 React 组件和脚本文件。
+- `public/`：静态资源文件夹，包含图标和静态 HTML 文件。
+- `dist/`：构建后的生产环境文件夹。
+- `scripts/`：扩展的背景脚本和其他辅助脚本。
+
+## 使用的技术栈
+
+- **React**：用于构建用户界面。
+- **Vite**：用于快速的开发和构建工具。
+- **TypeScript**：提供类型安全和代码补全。
+- **Less**：用于编写可维护的 CSS 样式。
 
 ## 许可证
 
-本项目遵循 [MIT License](LICENSE) 许可协议。
+此项目采用 [MIT 许可证](LICENSE)。
 ```
+
