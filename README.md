@@ -12,8 +12,8 @@
 - **高效的工作流程**：直接从浏览器快速访问最重要的工作链接。
 
 ## 界面预览
-- ![主页]('./public/images/image.png')
-- ![编辑]('./public/images/img1.png'')
+- ![主页](./public/images/image.png)
+- ![编辑](./public/images/img1.png)
 
 ## 安装步骤
 
