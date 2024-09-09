@@ -12,6 +12,8 @@
 - **高效的工作流程**：直接从浏览器快速访问最重要的工作链接。
 
 ### 可以在谷歌扩展商店上搜索（TabCollector）即可进行安装使用
+- 安装地址 https://chromewebstore.google.com/detail/oneigpjjighjopfdjelfbhpkbhkjjngb?hl=zh-CN&utm_source=ext_sidebar
+- 或者谷歌扩展程序直接搜 **TabCollector**
 
 
 ## 界面预览
