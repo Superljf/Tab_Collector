@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './index.less'; // �����Զ������ʽ�ļ�
+import './index.less'; 
 
 export default function App() {
   const [linkList, setLinkList] = useState([
